@@ -276,7 +276,8 @@ namespace AndroidSms
           text_only = 0;
         }
         else if (att.AttachmentContentType == "text/vcard" ||
-                 att.AttachmentContentType == "text/x-vCard")
+                 att.AttachmentContentType == "text/x-vCard" ||
+                 att.AttachmentContentType == "text/x-vcard")
         {
           cl = "vcard_" + id + ".vcf"; id++;
           data = att.AttachmentDataBase64String;
